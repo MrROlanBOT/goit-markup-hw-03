@@ -1,0 +1,270 @@
+:root {
+    --logo-font: "Raleway";
+    --main-font: "Roboto";
+    --brand-color: #2196f3;
+    --main-color: #212121; /* txt, hdr, btn */
+    --main-gray-color: #757575; /* p */
+    --background-dark-color: #2f303a; /*hero, footer*/
+    --background-gray-color: #f5f4fa; /* team bg, button bg */
+    --white-color: #ffffff; /* main bg, active txt, logo ftr */
+    --black-color: #000000; /* logo hdr*/
+    --card-border-color: #eeeeee;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /*
+  body  ================================
+  */
+  
+  body {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+  
+  /*hidden title*/
+  .hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  /*h2 title*/
+  .title {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+  }
+  /*
+  header ==================================================================
+  */
+  
+  /*navigation*/
+  .navigation,
+  .contacts-header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    list-style: none;
+  }
+  .navigation .link {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+  .navigation .link:focus,
+  .navigation .link:hover {
+    color: var(--brand-color);
+    outline-color: var(--brand-color);
+  }
+  .navigation .current {
+    color: var(--brand-color);
+  }
+  
+  /*header contacts*/
+  .contacts-header .contact {
+    text-decoration: none;
+    color: var(--main-gray-color);
+  }
+  .contacts-header .contact:hover,
+  .contacts-header .contact:focus {
+    color: var(--brand-color);
+  }
+  
+  /*
+  index main ==============================================================
+  */
+  
+  /*hero*/
+  .hero {
+    background-color: var(--background-dark-color);
+  }
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    text-align: center;
+    color: var(--white-color);
+  }
+  .button-order {
+    display: inline-flex;
+    padding: 10px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    border-style: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--brand-color);
+  }
+  
+  /*information*/
+  .information-list > li {
+    width: 270px;
+    height: 101px;
+    list-style: none;
+  }
+  .information-title {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  .information-text {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+    width: 270px;
+  }
+  
+  /*target*/
+  .target-list {
+    list-style: none;
+  }
+  
+  /*team*/
+  .team {
+    background-color: var(--background-gray-color);
+  }
+  .team-list > li {
+    box-sizing: content-box;
+    width: 270px;
+    height: 368px;
+    background: var(--white-color);
+    list-style: none;
+  }
+  .team-title {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  .team-text {
+    color: var(--main-gray-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  
+  /*
+  portafolio main =======
+  */
+  
+  /*buttons*/
+  .navigation-buttons {
+    list-style: none;
+  }
+  .navigation-buttons button {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    background-color: var(--background-gray-color);
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+    text-align: center;
+    border-style: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .navigation-buttons button:hover,
+  .navigation-buttons button:focus,
+  .navigation-buttons button:active {
+    color: var(--white-color);
+    background-color: var(--brand-color);
+  }
+  
+  /*gallery*/
+  .gallery > li {
+    width: 370px;
+    height: 404px;
+    background: var(--white-color);
+    border: 1px solid var(--card-border-color);
+    box-sizing: border-box;
+    list-style: none;
+  }
+  .gallery .link {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+  .gallery-text {
+    color: var(--main-gray-color);
+  }
+  
+  /*
+  footer ==================================================================
+  */
+  .contacts {
+    font-family: Roboto;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    background-color: var(--background-dark-color);
+  }
+  .contacts-footer address {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
+  .contacts-footer {
+    list-style: none;
+  }
+  .contacts-footer .contact {
+    text-decoration: none;
+    color: var(--footer-contacts-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
+  .contacts-footer .contact:hover,
+  .contacts-footer .contact:focus {
+    color: var(--brand-color);
+  }
