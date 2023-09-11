@@ -1,3 +1,3 @@
 ### live demo
 
-https://mrrolanbot.github.io/goit-markup-hw-03/
+https://mrrolanbot.github.io/goit-markup-hw-02/
